@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Grid</title>
+    </head>
+
+    <body>
+        <main>
+            <form action="" id="signUp">
+                <h2>Center a div masterclass</h2>
+                <input
+                    type="text"
+                    name="fname"
+                    class="f_name input_fields autofocus"
+                    placeholder="First name"
+                    required
+                />
+                <input type="text" name="lname" class="l_name input_fields" placeholder="Last name" required />
+                <input type="email" name="email" class="email input_fields" placeholder="Email address" required />
+                <h3>preferred class</h3>
+                <div class="class class1">
+                    <label>
+                        <input type="radio" name="class1" />
+                        Option 1 <br />
+                        <span>399$</span>
+                        <img src="/images/premium_photo-1661299248692-d58e3b299b7b.avif" alt="option 1 tutor" />
+                    </label>
+                </div>
+                <div class="class class2">
+                    <label>
+                        <input type="radio" name="class2" />
+                        Option 2 <br />
+                        <span>460$</span>
+                        <img src="/images/premium_photo-1658506785658-a41c8a7ba8ed.avif" alt="option 2 tutor" />
+                    </label>
+                </div>
+                <div class="class class3">
+                    <label>
+                        <input type="radio" name="class3" />
+                        Option 3 <br />
+                        <span>2600$</span>
+                        <img src="/images/photo-1511629091441-ee46146481b6.avif" alt="option 3 tutor" />
+                    </label>
+                </div>
+                <div class="class class4">
+                    <label>
+                        <input type="radio" name="class4" />
+                        Option 4 <br />
+                        <span>3000$</span>
+                        <img src="/images/photo-1573131522938-8e68a40017a5.avif" alt="option 4 tutor" />
+                    </label>
+                </div>
+                <button type="submit" class="formButton" onclick="fetchPost()">Submit</button>
+            </form>
+            <div>
+                <p id="textWrong"></p>
+            </div>
+        </main>
+        <script src="/js/postReq.js"></script>
+        <script></script>
+    </body>
+</html>
