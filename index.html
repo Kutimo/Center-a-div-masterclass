@@ -5,12 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
-        <title>Grid</title>
+        <title>Center a div masterclass</title>
     </head>
-
     <body>
         <main>
-            <form action="" id="signUp">
+            <form action="/submit" method="post" id="submit">
                 <h2>Center a div masterclass</h2>
                 <input
                     type="text"
@@ -24,43 +23,40 @@
                 <h3>preferred class</h3>
                 <div class="class class1">
                     <label>
-                        <input type="radio" name="class1" />
+                        <input type="radio" name="radio" value="class1" />
                         Option 1 <br />
                         <span>399$</span>
-                        <img src="/images/premium_photo-1661299248692-d58e3b299b7b.avif" alt="option 1 tutor" />
+                        <img src="./images/tutor1.avif" alt="option 1 tutor" />
                     </label>
                 </div>
                 <div class="class class2">
                     <label>
-                        <input type="radio" name="class2" />
+                        <input type="radio" name="radio" value="class2" />
                         Option 2 <br />
                         <span>460$</span>
-                        <img src="/images/premium_photo-1658506785658-a41c8a7ba8ed.avif" alt="option 2 tutor" />
+                        <img src="./images/tutor2.avif" alt="option 2 tutor" />
                     </label>
                 </div>
                 <div class="class class3">
                     <label>
-                        <input type="radio" name="class3" />
+                        <input type="radio" name="radio" value="class3" />
                         Option 3 <br />
                         <span>2600$</span>
-                        <img src="/images/photo-1511629091441-ee46146481b6.avif" alt="option 3 tutor" />
+                        <img src="./images/tutor3.avif" alt="option 3 tutor" />
                     </label>
                 </div>
                 <div class="class class4">
                     <label>
-                        <input type="radio" name="class4" />
+                        <input type="radio" name="radio" value="class4" />
                         Option 4 <br />
                         <span>3000$</span>
-                        <img src="/images/photo-1573131522938-8e68a40017a5.avif" alt="option 4 tutor" />
+                        <img src="./images/tutor4.avif" alt="option 4 tutor" />
                     </label>
                 </div>
-                <button type="submit" class="formButton" onclick="fetchPost()">Submit</button>
+                <button type="submit" class="formButton" onclick="">Submit</button>
             </form>
-            <div>
-                <p id="textWrong"></p>
-            </div>
         </main>
-        <script src="/js/postReq.js"></script>
+        <script src="./js/post.js"></script>
         <script></script>
     </body>
 </html>
