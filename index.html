@@ -12,7 +12,7 @@
     </head>
     <body>
         <main>
-            <form action="/submit" method="post" id="submit">
+            <form action="/submit" method="post" id="submit" class="offCenter">
                 <h2>Center a div masterclass</h2>
                 <input
                     type="text"
@@ -56,7 +56,8 @@
                         <img src="./images/tutor4.avif" alt="option 4 tutor" />
                     </label>
                 </div>
-                <button type="submit" class="formButton" onclick="">Submit</button>
+                <div class="loader hidden" id="loader"></div>
+                <button type="submit" class="formButton" id="btn">Submit</button>
             </form>
         </main>
         <script src="./js/post.js"></script>

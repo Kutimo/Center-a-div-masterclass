@@ -1,5 +1,8 @@
 const form = document.querySelector("form");
 
+
+
+
 // Compressed the code from previously made,
 // creates data object then stringifies it and sends it with a fetch request.
 form.addEventListener("submit", (event) => {
@@ -15,8 +18,15 @@ form.addEventListener("submit", (event) => {
         },
         // Then if response is successful a simple html page is loaded.
     }).then((response) => {
-        if (response.status === 201) {
-            window.location.href = "/success.html";
+        if (response.ok) {
+            document.getElementById("btn").className = "hidden";
+            document.getElementById("loader").classList.remove('hidden')
+            document.getElementById("submit").classList.remove('offCenter')
+            setTimeout(changePage, 5000)
         }
     });
 });
+
+function changePage() {
+    window.location.href = "./success.html";
+}
