@@ -12,7 +12,7 @@
 
 ## Brief Overview
 
-<img src="./screenshot.png" alt="project image" width="auto" height="550">
+<img src="./centerDivScreenshot.png" alt="project image" width="auto" height="550">
 
 <p>To test out fetching data from an API and submitting form data, I created a simple HTML form and used a POST request to send the data to a mock API called JSONPlaceholder (https://jsonplaceholder.typicode.com/).
 <br>
